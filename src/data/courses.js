@@ -69,6 +69,78 @@ const course1Modules = [
 <p>One of the most important mental models to develop early in your career is that the energy supply chain is fully integrated — a disruption at any point has cascading consequences. A shutdown of a major pipeline due to a compressor failure can affect gas supplies to millions of homes within hours. A refinery fire can cause regional fuel shortages within days. This interconnectedness explains why the sector places such high emphasis on asset integrity, planned maintenance, and robust operational procedures.</p>
 <p>The supply chain also involves an enormous contractor ecosystem. The major operators typically employ relatively small permanent workforces and rely on a network of engineering, maintenance, and specialist contractors for much of their operational and project activity. For new entrants, this means many early-career roles will be with contractor companies rather than direct employment with an operator — which is not a disadvantage. Contractors gain broad exposure across multiple assets and client organisations.</p>
 
+<div class="diagram-container">
+  <div class="diagram-title">Energy Value Chain — Upstream to Downstream</div>
+  <svg viewBox="0 0 560 120" width="100%" style="max-width:560px;display:block;margin:0 auto;">
+    <defs>
+      <marker id="arr1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+      </marker>
+    </defs>
+    <!-- Upstream box -->
+    <rect x="10" y="20" width="140" height="80" rx="10" fill="#0f2040" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="80" y="50" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">UPSTREAM</text>
+    <text x="80" y="66" text-anchor="middle" fill="#64748b" font-size="9">Exploration</text>
+    <text x="80" y="78" text-anchor="middle" fill="#64748b" font-size="9">Drilling</text>
+    <text x="80" y="90" text-anchor="middle" fill="#64748b" font-size="9">Production</text>
+    <!-- Arrow 1 -->
+    <line x1="152" y1="60" x2="196" y2="60" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr1)"/>
+    <!-- Midstream box -->
+    <rect x="198" y="20" width="140" height="80" rx="10" fill="#0f2040" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="268" y="50" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">MIDSTREAM</text>
+    <text x="268" y="66" text-anchor="middle" fill="#64748b" font-size="9">Pipelines</text>
+    <text x="268" y="78" text-anchor="middle" fill="#64748b" font-size="9">LNG Terminals</text>
+    <text x="268" y="90" text-anchor="middle" fill="#64748b" font-size="9">Storage</text>
+    <!-- Arrow 2 -->
+    <line x1="340" y1="60" x2="384" y2="60" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr1)"/>
+    <!-- Downstream box -->
+    <rect x="386" y="20" width="150" height="80" rx="10" fill="#0f2040" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="461" y="50" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">DOWNSTREAM</text>
+    <text x="461" y="66" text-anchor="middle" fill="#64748b" font-size="9">Refining</text>
+    <text x="461" y="78" text-anchor="middle" fill="#64748b" font-size="9">Petrochemicals</text>
+    <text x="461" y="90" text-anchor="middle" fill="#64748b" font-size="9">Distribution</text>
+  </svg>
+</div>
+
+<div class="diagram-container">
+  <div class="diagram-title">Industry Structure — Key Player Types</div>
+  <svg viewBox="0 0 540 200" width="100%" style="max-width:540px;display:block;margin:0 auto;">
+    <!-- NOC -->
+    <rect x="10" y="10" width="155" height="175" rx="10" fill="#0a1a30" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="10" y="10" width="155" height="32" rx="10" fill="#1e3a5f"/>
+    <text x="87" y="32" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="700">NOCs</text>
+    <text x="87" y="58" text-anchor="middle" fill="#94a3b8" font-size="9">State-owned</text>
+    <text x="87" y="73" text-anchor="middle" fill="#94a3b8" font-size="9">Saudi Aramco</text>
+    <text x="87" y="88" text-anchor="middle" fill="#94a3b8" font-size="9">ADNOC</text>
+    <text x="87" y="103" text-anchor="middle" fill="#94a3b8" font-size="9">Petrobras</text>
+    <text x="87" y="118" text-anchor="middle" fill="#94a3b8" font-size="9">NIOC</text>
+    <text x="87" y="140" text-anchor="middle" fill="#64748b" font-size="8">Hold ~70% of</text>
+    <text x="87" y="153" text-anchor="middle" fill="#64748b" font-size="8">proven reserves</text>
+    <!-- IOC -->
+    <rect x="190" y="10" width="155" height="175" rx="10" fill="#0a1a30" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="190" y="10" width="155" height="32" rx="10" fill="#1e3a5f"/>
+    <text x="267" y="32" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="700">IOCs</text>
+    <text x="267" y="58" text-anchor="middle" fill="#94a3b8" font-size="9">Publicly listed</text>
+    <text x="267" y="73" text-anchor="middle" fill="#94a3b8" font-size="9">Shell</text>
+    <text x="267" y="88" text-anchor="middle" fill="#94a3b8" font-size="9">BP</text>
+    <text x="267" y="103" text-anchor="middle" fill="#94a3b8" font-size="9">TotalEnergies</text>
+    <text x="267" y="118" text-anchor="middle" fill="#94a3b8" font-size="9">ExxonMobil</text>
+    <text x="267" y="140" text-anchor="middle" fill="#64748b" font-size="8">Global operations,</text>
+    <text x="267" y="153" text-anchor="middle" fill="#64748b" font-size="8">shareholder returns</text>
+    <!-- Service Cos -->
+    <rect x="370" y="10" width="155" height="175" rx="10" fill="#0a1a30" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="370" y="10" width="155" height="32" rx="10" fill="#1e3a5f"/>
+    <text x="447" y="32" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="700">Service Cos</text>
+    <text x="447" y="58" text-anchor="middle" fill="#94a3b8" font-size="9">Contractors</text>
+    <text x="447" y="73" text-anchor="middle" fill="#94a3b8" font-size="9">SLB (Schlumberger)</text>
+    <text x="447" y="88" text-anchor="middle" fill="#94a3b8" font-size="9">Halliburton</text>
+    <text x="447" y="103" text-anchor="middle" fill="#94a3b8" font-size="9">Baker Hughes</text>
+    <text x="447" y="118" text-anchor="middle" fill="#94a3b8" font-size="9">Wood, Worley</text>
+    <text x="447" y="140" text-anchor="middle" fill="#64748b" font-size="8">Provide technical</text>
+    <text x="447" y="153" text-anchor="middle" fill="#64748b" font-size="8">services to operators</text>
+  </svg>
+</div>
+
 <div class="terminology-box">
   <div class="term-title">Key Terminology — Module 1</div>
   <dl>
@@ -91,6 +163,7 @@ const course1Modules = [
         question: 'Which segment of the oil and gas value chain covers the transportation and storage of hydrocarbons between production sites and refineries?',
         options: ['Upstream', 'Midstream', 'Downstream', 'Petrochemicals'],
         correct: 1,
+        explanation: 'Midstream sits between production (upstream) and processing (downstream) — it moves hydrocarbons via pipelines, tankers, and LNG terminals.',
       },
       {
         id: 'esf-m1-q2',
@@ -102,6 +175,7 @@ const course1Modules = [
           'Operational Performance and Industry Training Office — manages HSE compliance',
         ],
         correct: 1,
+        explanation: 'OPITO is the global skills body for the energy sector, setting training standards such as BOSIET that are required before any offshore work.',
       },
       {
         id: 'esf-m1-q3',
@@ -113,12 +187,14 @@ const course1Modules = [
           'IOCs are prohibited from operating in countries with NOCs',
         ],
         correct: 1,
+        explanation: 'NOCs are state-owned and control approximately 70% of the world\'s proven reserves. IOCs are publicly listed and operate globally without state ownership.',
       },
       {
         id: 'esf-m1-q4',
         question: 'Fossil fuels currently account for approximately what percentage of global primary energy consumption?',
         options: ['45%', '60%', '80%', '95%'],
         correct: 2,
+        explanation: 'Despite two decades of renewable growth, fossil fuels (oil ~33%, coal ~27%, gas ~24%) still account for around 80% of global primary energy demand.',
       },
     ],
   },
@@ -126,6 +202,7 @@ const course1Modules = [
     id: 'esf-m2',
     title: 'Upstream Operations',
     duration: '30 min',
+    interactive: 'label-diagram',
     content: `
 <h2>Exploration, Drilling, and Production</h2>
 <p>Upstream operations represent the beginning of the oil and gas value chain: finding hydrocarbons underground and bringing them to surface. It is the most technically demanding and capital-intensive phase of the business, and it generates the raw material — crude oil and natural gas — that the rest of the industry depends on.</p>
@@ -195,6 +272,74 @@ const course1Modules = [
   </pre>
 </div>
 
+<div class="diagram-container">
+  <div class="diagram-title">Wellbore Cross-Section — Casing Design</div>
+  <svg viewBox="0 0 340 320" width="100%" style="max-width:340px;display:block;margin:0 auto;">
+    <!-- Ground surface -->
+    <rect x="0" y="0" width="340" height="30" fill="#1a2a1a"/>
+    <text x="170" y="20" text-anchor="middle" fill="#86efac" font-size="10">Ground Surface / Seabed</text>
+    <!-- Conductor casing (outermost) -->
+    <rect x="80" y="30" width="180" height="260" rx="0" fill="none" stroke="#64748b" stroke-width="3"/>
+    <!-- Surface casing -->
+    <rect x="100" y="50" width="140" height="220" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+    <!-- Production casing -->
+    <rect x="120" y="70" width="100" height="190" fill="#0d1526" stroke="#3b82f6" stroke-width="2"/>
+    <!-- Tubing (inner) -->
+    <rect x="145" y="90" width="50" height="150" fill="#0a0e1a" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <!-- Cement (between casings) -->
+    <text x="92" y="160" text-anchor="middle" fill="#64748b" font-size="8" transform="rotate(-90,92,160)">Cement</text>
+    <!-- Labels -->
+    <line x1="80" y1="50" x2="30" y2="50" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="5" y="54" fill="#64748b" font-size="9">Conductor</text>
+    <line x1="100" y1="70" x2="30" y2="70" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="5" y="74" fill="#94a3b8" font-size="9">Surface</text>
+    <line x1="120" y1="90" x2="30" y2="90" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="5" y="94" fill="#3b82f6" font-size="9">Production</text>
+    <line x1="145" y1="115" x2="30" y2="115" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="10" y="119" fill="#60a5fa" font-size="9">Tubing</text>
+    <!-- Reservoir layer -->
+    <rect x="0" y="268" width="340" height="30" fill="#1a1a0a" opacity="0.8"/>
+    <!-- Perforations -->
+    <circle cx="145" cy="278" r="4" fill="#f59e0b"/>
+    <circle cx="145" cy="290" r="4" fill="#f59e0b"/>
+    <circle cx="195" cy="278" r="4" fill="#f59e0b"/>
+    <circle cx="195" cy="290" r="4" fill="#f59e0b"/>
+    <text x="170" y="310" text-anchor="middle" fill="#f59e0b" font-size="9">Reservoir / Perforations</text>
+    <!-- Flow arrows -->
+    <line x1="135" y1="282" x2="145" y2="278" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="205" y1="282" x2="195" y2="278" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- BOP label -->
+    <rect x="115" y="28" width="110" height="18" rx="4" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+    <text x="170" y="40" text-anchor="middle" fill="#f87171" font-size="9" font-weight="700">BOP — Well Control</text>
+  </svg>
+</div>
+
+<div class="diagram-container">
+  <div class="diagram-title">Offshore vs Onshore — Key Differences</div>
+  <svg viewBox="0 0 540 180" width="100%" style="max-width:540px;display:block;margin:0 auto;">
+    <!-- Onshore column -->
+    <rect x="10" y="10" width="245" height="160" rx="10" fill="#0a1a10" stroke="#22c55e" stroke-width="1.5"/>
+    <rect x="10" y="10" width="245" height="32" rx="10" fill="#14421e"/>
+    <text x="132" y="32" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="700">ONSHORE</text>
+    <text x="30" y="60" fill="#86efac" font-size="10">✓ Lower cost (1×)</text>
+    <text x="30" y="78" fill="#86efac" font-size="10">✓ Road/vehicle access</text>
+    <text x="30" y="96" fill="#86efac" font-size="10">✓ Easier evacuation</text>
+    <text x="30" y="114" fill="#94a3b8" font-size="10">△ Desert / arctic extremes</text>
+    <text x="30" y="132" fill="#94a3b8" font-size="10">△ H2S, sand ingress risk</text>
+    <text x="30" y="150" fill="#94a3b8" font-size="10">△ Land access permitting</text>
+    <!-- Offshore column -->
+    <rect x="285" y="10" width="245" height="160" rx="10" fill="#0a1020" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="285" y="10" width="245" height="32" rx="10" fill="#0e2050"/>
+    <text x="407" y="32" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">OFFSHORE</text>
+    <text x="305" y="60" fill="#93c5fd" font-size="10">✓ Rich deepwater reserves</text>
+    <text x="305" y="78" fill="#93c5fd" font-size="10">✓ No land access needed</text>
+    <text x="305" y="96" fill="#fca5a5" font-size="10">✗ 3–10× higher cost</text>
+    <text x="305" y="114" fill="#fca5a5" font-size="10">✗ Helicopter/boat access only</text>
+    <text x="305" y="132" fill="#fca5a5" font-size="10">✗ Isolation from medical care</text>
+    <text x="305" y="150" fill="#fca5a5" font-size="10">✗ Wave loading, corrosion</text>
+  </svg>
+</div>
+
 <div class="terminology-box">
   <div class="term-title">Key Terminology — Module 2</div>
   <dl>
@@ -222,6 +367,7 @@ const course1Modules = [
           'To reduce the weight of the drillstring',
         ],
         correct: 1,
+        explanation: 'Drilling mud has three critical roles: cooling the drill bit, transporting cuttings up the annulus to surface, and using hydrostatic pressure to prevent a blowout.',
       },
       {
         id: 'esf-m2-q2',
@@ -233,6 +379,7 @@ const course1Modules = [
           'A surface topographic high directly above the reservoir',
         ],
         correct: 3,
+        explanation: 'Reservoirs can be deep, shallow, dipping, or flat — surface topography is irrelevant. The three essentials are: source rock, migration pathway, and trap/seal.',
       },
       {
         id: 'esf-m2-q3',
@@ -244,12 +391,14 @@ const course1Modules = [
           'A gas cloud ignited by static electricity on the rig floor',
         ],
         correct: 1,
+        explanation: 'The BOP failed to shear the drillpipe and seal the well during the blowout, allowing hydrocarbons to reach the rig and ignite. It remains the defining well control case study.',
       },
       {
         id: 'esf-m2-q4',
         question: 'What type of offshore drilling rig is designed for ultra-deepwater operations at depths exceeding 1,500 metres?',
         options: ['Jack-up rig', 'Barge-mounted rig', 'Drillship or semi-submersible', 'Tension-leg platform'],
         correct: 2,
+        explanation: 'Jack-ups are limited to ~150m water depth. Drillships and semi-submersibles are moored or dynamically positioned in deepwater and ultra-deepwater locations.',
       },
       {
         id: 'esf-m2-q5',
@@ -261,6 +410,7 @@ const course1Modules = [
           'The high surface area of anticlines provides more pore space',
         ],
         correct: 1,
+        explanation: 'Hydrocarbons are buoyant relative to water. The arch of an anticline creates a high point where buoyant oil and gas accumulate beneath the impermeable cap rock.',
       },
     ],
   },
@@ -327,6 +477,58 @@ const course1Modules = [
 <p>Petrochemicals are chemical products derived from oil and gas. The petrochemical industry uses refinery products (primarily naphtha, ethane, and propane) as feedstocks to produce the basic chemicals from which plastics, synthetic fibres, fertilisers, pharmaceuticals, and thousands of industrial materials are made.</p>
 <p>The most important petrochemical process is <strong>steam cracking</strong>, which produces <strong>ethylene</strong> — the single most produced organic chemical in the world. Ethylene polymerises to form polyethylene (the world's most common plastic) and is the precursor to a vast range of other chemicals including vinyl chloride (PVC), ethylene oxide, and styrene.</p>
 
+<div class="diagram-container">
+  <div class="diagram-title">Simplified Refinery Flow — Crude to Products</div>
+  <svg viewBox="0 0 580 240" width="100%" style="max-width:580px;display:block;margin:0 auto;">
+    <defs>
+      <marker id="arrR" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L7,3 z" fill="#3b82f6"/>
+      </marker>
+      <marker id="arrP" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L7,3 z" fill="#60a5fa"/>
+      </marker>
+    </defs>
+    <!-- Crude input -->
+    <rect x="5" y="95" width="80" height="50" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="45" y="116" text-anchor="middle" fill="#f1f5f9" font-size="9" font-weight="700">Crude Oil</text>
+    <text x="45" y="130" text-anchor="middle" fill="#64748b" font-size="8">Input</text>
+    <!-- Arrow to CDU -->
+    <line x1="86" y1="120" x2="110" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrR)"/>
+    <!-- CDU box -->
+    <rect x="112" y="60" width="90" height="120" rx="8" fill="#0f2040" stroke="#3b82f6" stroke-width="2"/>
+    <text x="157" y="84" text-anchor="middle" fill="#60a5fa" font-size="9" font-weight="700">CDU</text>
+    <text x="157" y="97" text-anchor="middle" fill="#64748b" font-size="8">Distillation</text>
+    <line x1="130" y1="105" x2="200" y2="105" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="130" y1="120" x2="200" y2="120" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="130" y1="135" x2="200" y2="135" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="130" y1="150" x2="200" y2="150" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <!-- Products from CDU (right side) -->
+    <!-- LPG -->
+    <line x1="202" y1="72" x2="270" y2="72" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="274" y="76" fill="#94a3b8" font-size="8">LPG / Gas</text>
+    <!-- Naphtha -->
+    <line x1="202" y1="92" x2="270" y2="92" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="274" y="96" fill="#94a3b8" font-size="8">Naphtha → Petrol</text>
+    <!-- Kerosene -->
+    <line x1="202" y1="112" x2="270" y2="112" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="274" y="116" fill="#94a3b8" font-size="8">Kerosene / Jet A-1</text>
+    <!-- Diesel -->
+    <line x1="202" y1="132" x2="270" y2="132" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="274" y="136" fill="#94a3b8" font-size="8">Diesel / Gas Oil</text>
+    <!-- Heavy GO -->
+    <line x1="202" y1="152" x2="240" y2="152" stroke="#60a5fa" stroke-width="1.5"/>
+    <line x1="240" y1="152" x2="240" y2="175" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="244" y="190" fill="#94a3b8" font-size="8">Heavy GO → FCC</text>
+    <!-- FCC box -->
+    <rect x="295" y="185" width="75" height="40" rx="6" fill="#1a2a40" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="332" y="202" text-anchor="middle" fill="#60a5fa" font-size="8" font-weight="700">FCC Unit</text>
+    <text x="332" y="215" text-anchor="middle" fill="#64748b" font-size="8">→ More Petrol</text>
+    <!-- Residue -->
+    <line x1="202" y1="168" x2="270" y2="168" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrP)"/>
+    <text x="274" y="172" fill="#94a3b8" font-size="8">Residue → Bitumen</text>
+  </svg>
+</div>
+
 <div class="terminology-box">
   <div class="term-title">Key Terminology — Module 3</div>
   <dl>
@@ -354,6 +556,7 @@ const course1Modules = [
           'Pressure increases with column height, causing heavier fractions to migrate upward',
         ],
         correct: 1,
+        explanation: 'Distillation separates by boiling point. Lighter fractions (LPG, naphtha) vapourise and condense near the top; heavier fractions (diesel, residue) collect lower down.',
       },
       {
         id: 'esf-m3-q2',
@@ -365,6 +568,7 @@ const course1Modules = [
           'To produce hydrogen for use in other refinery units',
         ],
         correct: 2,
+        explanation: 'FCC "cracks" large heavy hydrocarbon molecules into smaller, higher-value ones using a hot catalyst — primarily producing petrol and LPG from what would otherwise be low-value residue.',
       },
       {
         id: 'esf-m3-q3',
@@ -376,6 +580,7 @@ const course1Modules = [
           'It has been contaminated with seawater during offshore production',
         ],
         correct: 1,
+        explanation: '"Sour" refers specifically to sulphur content above 0.5%. Sour crudes must have sulphur removed before products can meet environmental specs, adding cost and reducing value.',
       },
       {
         id: 'esf-m3-q4',
@@ -387,6 +592,7 @@ const course1Modules = [
           'It is the lightest compound in crude oil and therefore the easiest to extract',
         ],
         correct: 2,
+        explanation: 'Ethylene is the world\'s most produced organic chemical. It forms polyethylene (most common plastic) and is the precursor to PVC, ethylene oxide, styrene, and hundreds of other chemicals.',
       },
     ],
   },
@@ -449,6 +655,44 @@ const course1Modules = [
   <li><strong>Communications</strong> — misunderstood verbal instructions, incomplete handovers, and ambiguous written procedures are disproportionately represented in incident investigations.</li>
 </ul>
 
+<div class="diagram-container">
+  <div class="diagram-title">Heinrich's Incident Pyramid — The Safety Triangle</div>
+  <svg viewBox="0 0 420 320" width="100%" style="max-width:420px;display:block;margin:0 auto;">
+    <!-- Full triangle outline -->
+    <polygon points="210,20 390,290 30,290" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <!-- Level 1 – Fatal (top) -->
+    <polygon points="210,20 249,84 171,84" fill="rgba(239,68,68,0.3)" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="210" y="60" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="700">1</text>
+    <text x="330" y="60" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">Fatal / Major Injury</text>
+    <!-- Level 2 – LTI -->
+    <polygon points="171,84 249,84 276,140 144,140" fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="210" y="117" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="700">10</text>
+    <text x="330" y="117" text-anchor="middle" fill="#fbbf24" font-size="10">Lost Time Injuries</text>
+    <!-- Level 3 – Medical -->
+    <polygon points="144,140 276,140 310,200 100,200" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="210" y="175" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700">30</text>
+    <text x="330" y="175" text-anchor="middle" fill="#93c5fd" font-size="10">Medical Treatment</text>
+    <!-- Level 4 – Near Miss -->
+    <polygon points="100,200 310,200 350,260 60,260" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="210" y="235" text-anchor="middle" fill="#86efac" font-size="10" font-weight="700">300</text>
+    <text x="330" y="235" text-anchor="middle" fill="#86efac" font-size="10">Near Misses</text>
+    <!-- Level 5 – Base -->
+    <polygon points="60,260 350,260 390,290 30,290" fill="rgba(148,163,184,0.1)" stroke="#64748b" stroke-width="1.5"/>
+    <text x="210" y="278" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="700">3,000+</text>
+    <text x="330" y="278" text-anchor="middle" fill="#94a3b8" font-size="10">Unsafe Acts/Conditions</text>
+    <!-- Labels on right side -->
+    <line x1="250" y1="58" x2="295" y2="58" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="250" y1="115" x2="295" y2="115" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="250" y1="173" x2="295" y2="173" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="250" y1="233" x2="295" y2="233" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="250" y1="276" x2="295" y2="276" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Focus arrow -->
+    <text x="20" y="280" fill="#3b82f6" font-size="9" text-anchor="middle">Focus</text>
+    <text x="20" y="292" fill="#3b82f6" font-size="9" text-anchor="middle">here ↑</text>
+  </svg>
+  <p style="color:#64748b;font-size:0.78rem;text-align:center;margin-top:0.5rem;">Modern ratios vary by industry — the principle is what matters: address the base to prevent the top.</p>
+</div>
+
 <div class="terminology-box">
   <div class="term-title">Key Terminology — Module 4</div>
   <dl>
@@ -476,6 +720,7 @@ const course1Modules = [
           'Personal injury incidents are more important to track than process safety events',
         ],
         correct: 1,
+        explanation: 'The ratios vary, but the principle is solid: a pattern of near misses and unsafe conditions precedes serious accidents. Address the base of the pyramid, not just the top.',
       },
       {
         id: 'esf-m4-q2',
@@ -487,12 +732,14 @@ const course1Modules = [
           'SWA applies only to contractors, not permanent employees',
         ],
         correct: 2,
+        explanation: 'SWA is universal — it applies to every person on site regardless of seniority, employment type, or commercial pressure. Using it should never result in retaliation.',
       },
       {
         id: 'esf-m4-q3',
         question: 'Human error contributes to approximately what percentage of industrial accidents?',
         options: ['20%', '40%', '60%', '80%'],
         correct: 3,
+        explanation: 'Around 80% of industrial accidents involve human error as a contributing factor — but this reflects poor system design, not incompetent people. Human factors engineering addresses this.',
       },
       {
         id: 'esf-m4-q4',
@@ -504,6 +751,7 @@ const course1Modules = [
           'Hydrocarbon Safety and Spill Engineering',
         ],
         correct: 1,
+        explanation: 'HSSE encompasses all four domains: Health (occupational health), Safety (accident prevention), Security (asset and personnel protection), and Environment (environmental compliance).',
       },
       {
         id: 'esf-m4-q5',
@@ -515,6 +763,7 @@ const course1Modules = [
           'A safety manual provided to all new offshore workers during induction',
         ],
         correct: 2,
+        explanation: 'The Safety Case is the operator\'s own document — produced by them, not the regulator. It demonstrates to the HSE that they understand and can manage their major accident hazards.',
       },
     ],
   },

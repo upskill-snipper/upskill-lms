@@ -39,7 +39,104 @@ body {
   border-radius: 12px;
 }
 
-/* Course content styles */
+/* ── Module content styles ─────────────────────────────────────────── */
+.module-content p { margin-bottom: 1.25rem; line-height: 1.8; font-size: 1rem; color: #cbd5e1; }
+.module-content h2 { font-size: 1.4rem; font-weight: 700; margin: 2rem 0 1rem; color: #60a5fa; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.5rem; }
+.module-content h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #93c5fd; }
+.module-content ul { margin: 1rem 0 1.25rem 1.5rem; }
+.module-content ol { margin: 1rem 0 1.25rem 1.5rem; }
+.module-content li { margin-bottom: 0.5rem; line-height: 1.7; color: #cbd5e1; }
+.module-content strong { color: #e2e8f0; font-weight: 600; }
+.module-content em { color: #93c5fd; font-style: italic; }
+.module-content .key-term {
+  background: rgba(59,130,246,0.1);
+  border-left: 3px solid #3b82f6;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+.module-content .warning-box {
+  background: rgba(245,158,11,0.08);
+  border-left: 3px solid #f59e0b;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+.module-content .diagram-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #0d1526;
+  border-radius: 12px;
+  border: 1px solid rgba(59,130,246,0.2);
+  overflow-x: auto;
+}
+.module-content .diagram-container svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.module-content .diagram-box {
+  background: #0a0e1a;
+  border: 1px solid #1e2d4a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+.module-content .diagram-title {
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.module-content pre {
+  color: #94a3b8;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  white-space: pre;
+  overflow-x: auto;
+}
+.module-content .terminology-box {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.module-content .term-title {
+  color: #60a5fa;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.module-content dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+}
+.module-content dt {
+  color: #f1f5f9;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.module-content dd {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Fade-in animation for quiz feedback */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Course content styles (legacy class) ──────────────────────────── */
 .course-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
